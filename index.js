@@ -35,8 +35,8 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(/* code here */) {
-  /* code here */
+function sayGoodbye(name) {
+  return "Goodbye, " + name + ". Have a great day.";
 }
 
 /**
@@ -52,6 +52,10 @@ function sayGoodbye(/* code here */) {
  * 
  * Hint 1: The formula for converting celsius to fahrenheit is t*9/5 + 32 where t is the temperature in celsius.
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how. 
+*/
+/*
+temperatureCtoF = (t) => t * 9/5 + 32;
+console.log(Math.round(temperatureCtoF(24)));
 */
 function temperatureCtoF(/* code here */) {
   /* code here */
@@ -94,11 +98,16 @@ function temperatureInF(/* code here */) {
  *   name: "Leia",
  *   email: "leia@leia.com",
  * }
-*/
-function makePersonObject(/* code here */) {
-  /* code here */
+*/  
+function makePersonObject(id1, name1, email1) {
+  const person = {
+    id: id1,
+    name: name1,
+    email: email1
+  }
+  return person;
 }
-
+ 
 /**
  * ### Challenge `getName`
  * 
@@ -112,8 +121,9 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+function getName(obj)  {
+ return "Hello, my name is " + obj.name;
+
 }
 
 
@@ -132,7 +142,7 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
+function appleIndex() {
   /* code here */
 }
 
